@@ -9,7 +9,7 @@ docker build . -t image-updater:latest
 
 Running Container using the image and pass with required Values
 
-docker run -it --name update \\
+docker run -it --name update \
       -e IMAGE_UPDATE_PATH=./manifests/Deploy.yaml \
       -e TAG=v3 \
       -e IMAGE=myprivate/prod-add \
