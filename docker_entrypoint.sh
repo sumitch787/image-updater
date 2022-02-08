@@ -34,7 +34,7 @@ then
   printf "BRANCH value not provided\n"
   exit 1
 else
-git clone --depth 1 -b $BRANCH $REPO /app
+git clone --depth 1 -b $BRANCH $REPO $WORK_DIR
 fi
 }
 
